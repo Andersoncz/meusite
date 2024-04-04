@@ -1,0 +1,98 @@
+.introducao{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 50px;
+    margin: auto auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+.introducao h1 {
+    color: #525252;
+    font-size: 5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+   
+}
+#inicio p {
+    font-size: 2rem;
+    color: #038bbb;
+    
+}
+.introducao h1::before{
+    content: " ";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url('../imagens/detalhe.svg')no-repeat center;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: -1;
+}
+@media (max-width: 800px){
+    .introducao h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 800px){
+    .introducao {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+#inicio p{
+    font-size: 20px;
+}
+    .introducao h1::before {
+        width: 30px;
+        height: 10px;
+        left: 0px;
+    }
+}
+@media (max-width: 800px) {
+    .introducao{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .introducao img {
+        width: 250px;
+        grid-column: 1;
+    
+    }
+}
+.box-inicio {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 30px;
+    filter: drop-shadow(2px 5px 2px #929090);
+}
+.box-inicio a{
+    width: 50px;
+}
+.perfil{
+    width: 500px;
+    filter: drop-shadow(5px 7px 10px #525252);
+   
+}
+.marca{
+   position: absolute;
+   top: 5px;
+   width: 50px;
+   left: 40px;
+   filter: drop-shadow(1px 4px 5px #525252);
+
+}
+@media(max-width:1200px){
+    .marca{
+        display: none;
+        margin-left: auto auto;
+        
+
+    }
+}
+  
+
